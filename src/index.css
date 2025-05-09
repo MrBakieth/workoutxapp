@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111111;
+  --foreground: #ffffff;
+  --primary: #0aff9d;
+  --secondary: #00cc7a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-dark px-6 py-3 rounded-lg font-bold transition-all duration-300 hover:bg-secondary hover:shadow-[0_0_15px_rgba(10,255,157,0.5)];
+  }
+  
+  .glow-text {
+    @apply text-primary relative;
+    text-shadow: 0 0 10px rgba(10, 255, 157, 0.7);
+  }
+  
+  .card {
+    @apply bg-dark-gray rounded-xl p-6 border border-primary/20 shadow-lg hover:shadow-primary/10 transition-all duration-300;
+  }
+}

@@ -1,0 +1,62 @@
+{
+    "splash": {
+        "slogan": "ELEVATE YOUR FITNESS JOURNEY"
+    },
+    "home": {
+        "hero": {
+            "title": "Unleash Your Full Potential",
+            "title1": "Unleash Your",
+            "title2": "Full Potential",
+            "subtitle": "Personalized workouts, real-time feedback, and AI-powered training - all in one app."
+        },
+        "cta": {
+            "download": "Download Now",
+            "comingSoon": "Coming Soon",
+            "watchDemo": "Watch Demo",
+            "description": "Download the app now and start your fitness journey!"
+        },
+        "features": {
+            "title": "Powerful AI Features",
+            "subtitle": "Smart features that take your fitness experience to the next level",
+            "description": "Empower your fitness journey with AI-powered workouts, real-time feedback, and more.",
+            "personalWorkouts": {
+                "title": "AI-Powered Personalized Workouts",
+                "description": "Get custom workout plans tailored to your goals, fitness level, and preferences powered by artificial intelligence."
+            },
+            "realTimeFeedback": {
+                "title": "Real-Time Form Correction",
+                "description": "Our AI technology analyzes your movements to provide instant feedback and improve your technique."
+            },
+            "progressTracking": {
+                "title": "Smart Progress Tracking",
+                "description": "Track your fitness journey with detailed analytics and AI-driven insights for continuous improvement."
+            },
+            "nutrition": {
+                "title": "Nutrition Guidance",
+                "description": "Receive AI-optimized meal suggestions that complement your workout routine and fitness goals."
+            }
+        },
+        "testimonials": {
+            "title": "Success Stories",
+            "subtitle": "See how AI is transforming fitness journeys",
+            "description": "Discover real success stories from our users empowered by AI.",
+            "aiSuggestion": "AI Suggestion",
+            "aiSuggestion1": "My workout plan is fully personalized, I love it!",
+            "aiSuggestion2": "With real-time feedback, I can instantly correct my form.",
+            "aiSuggestion3": "Tracking my progress and seeing analytics is so motivating."
+        }
+    },
+    "navbar": {
+        "features": "Features",
+        "pricing": "Pricing",
+        "download": "Download",
+        "contact": "Contact",
+        "downloadNow": "Download Now"
+    },
+    "footer": {
+        "copyright": "© 2024 All rights reserved",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "contact": "Contact"
+    }
+}

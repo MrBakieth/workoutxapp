@@ -1,0 +1,62 @@
+{
+    "splash": {
+        "slogan": "FITNESS YOLCULUĞUNU YÜKSELTİN"
+    },
+    "home": {
+        "hero": {
+            "title": "Potansiyelini Ortaya Çıkar",
+            "title1": "Potansiyelini",
+            "title2": "Ortaya Çıkar",
+            "subtitle": "Kişiselleştirilmiş antrenmanlar, gerçek zamanlı geri bildirim ve yapay zeka destekli eğitim - hepsi tek bir uygulamada."
+        },
+        "cta": {
+            "download": "Şimdi İndir",
+            "comingSoon": "Yakında",
+            "watchDemo": "Demoyu İzle",
+            "description": "Uygulamayı hemen indir ve fitness yolculuğuna başla!"
+        },
+        "features": {
+            "title": "Güçlü Yapay Zeka Özellikleri",
+            "subtitle": "Spor deneyimini bir üst seviyeye taşıyan akıllı özellikler",
+            "description": "Yapay zeka destekli antrenmanlar, anlık geri bildirim ve daha fazlası ile fitness yolculuğunuza güç katın.",
+            "personalWorkouts": {
+                "title": "Yapay Zeka Destekli Kişiselleştirilmiş Antrenmanlar",
+                "description": "Hedeflerinize, fitness seviyenize ve tercihlerinize göre yapay zeka ile oluşturulmuş özel antrenman planları."
+            },
+            "realTimeFeedback": {
+                "title": "Gerçek Zamanlı Form Düzeltme",
+                "description": "Yapay zeka teknolojimiz hareketlerinizi analiz ederek anında geri bildirim sağlar ve tekniğinizi geliştirir."
+            },
+            "progressTracking": {
+                "title": "Akıllı İlerleme Takibi",
+                "description": "Fitness yolculuğunuzu ayrıntılı analizler ve yapay zeka destekli içgörülerle sürekli gelişim için takip edin."
+            },
+            "nutrition": {
+                "title": "Beslenme Rehberliği",
+                "description": "Antrenman rutininizi ve fitness hedeflerinizi tamamlayan yapay zeka ile optimize edilmiş yemek önerileri alın."
+            }
+        },
+        "testimonials": {
+            "title": "Başarı Hikayeleri",
+            "subtitle": "Yapay zekanın fitness yolculuklarını nasıl dönüştürdüğünü görün",
+            "description": "Kullanıcılarımızın yapay zeka ile elde ettiği gerçek başarı hikayelerini keşfedin.",
+            "aiSuggestion": "Yapay Zeka Tavsiyesi",
+            "aiSuggestion1": "Antrenman programım tamamen bana özel hazırlandı, çok memnunum!",
+            "aiSuggestion2": "Gerçek zamanlı geri bildirim sayesinde hareketlerimi hemen düzeltebiliyorum.",
+            "aiSuggestion3": "İlerlemeni takip etmek ve analizleri görmek çok motive edici."
+        }
+    },
+    "navbar": {
+        "features": "Özellikler",
+        "pricing": "Fiyatlandırma",
+        "download": "İndir",
+        "contact": "İletişim",
+        "downloadNow": "Hemen İndir"
+    },
+    "footer": {
+        "copyright": "© 2024 Tüm hakları saklıdır",
+        "privacy": "Gizlilik",
+        "terms": "Şartlar",
+        "contact": "İletişim"
+    }
+}

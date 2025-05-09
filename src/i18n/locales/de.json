@@ -1,0 +1,62 @@
+{
+    "splash": {
+        "slogan": "STEIGERN SIE IHRE FITNESS-REISE"
+    },
+    "home": {
+        "hero": {
+            "title": "Entfalte dein volles Potenzial",
+            "title1": "Entfalte dein",
+            "title2": "volles Potenzial",
+            "subtitle": "Personalisierte Workouts, Echtzeit-Feedback und KI-gestütztes Training - alles in einer App."
+        },
+        "cta": {
+            "download": "Jetzt Herunterladen",
+            "comingSoon": "Demnächst",
+            "watchDemo": "Demo ansehen",
+            "description": "Laden Sie die App jetzt herunter und starten Sie Ihre Fitnessreise!"
+        },
+        "features": {
+            "title": "Leistungsstarke KI-Funktionen",
+            "subtitle": "Intelligente Funktionen, die Ihr Fitnesserlebnis auf die nächste Stufe heben",
+            "description": "Stärken Sie Ihre Fitnessreise mit KI-gestützten Workouts, Echtzeit-Feedback und mehr.",
+            "personalWorkouts": {
+                "title": "KI-gestützte personalisierte Workouts",
+                "description": "Erhalten Sie maßgeschneiderte Trainingspläne, die auf Ihre Ziele, Ihr Fitnessniveau und Ihre Vorlieben zugeschnitten sind."
+            },
+            "realTimeFeedback": {
+                "title": "Echtzeit-Formkorrektur",
+                "description": "Unsere KI-Technologie analysiert Ihre Bewegungen, um sofortiges Feedback zu geben und Ihre Technik zu verbessern."
+            },
+            "progressTracking": {
+                "title": "Intelligente Fortschrittsverfolgung",
+                "description": "Verfolgen Sie Ihre Fitness-Reise mit detaillierten Analysen und KI-gesteuerten Erkenntnissen für kontinuierliche Verbesserung."
+            },
+            "nutrition": {
+                "title": "Ernährungsberatung",
+                "description": "Erhalten Sie KI-optimierte Mahlzeitenvorschläge, die Ihre Trainingsroutine und Fitnessziele ergänzen."
+            }
+        },
+        "testimonials": {
+            "title": "Erfolgsgeschichten",
+            "subtitle": "Sehen Sie, wie KI Fitness-Reisen transformiert",
+            "description": "Entdecken Sie echte Erfolgsgeschichten unserer Nutzer, die von KI profitieren.",
+            "aiSuggestion": "KI-Empfehlung",
+            "aiSuggestion1": "Mein Trainingsplan ist komplett personalisiert, ich bin sehr zufrieden!",
+            "aiSuggestion2": "Dank Echtzeit-Feedback kann ich meine Form sofort korrigieren.",
+            "aiSuggestion3": "Den Fortschritt zu verfolgen und Analysen zu sehen, ist sehr motivierend."
+        }
+    },
+    "navbar": {
+        "features": "Funktionen",
+        "pricing": "Preise",
+        "download": "Herunterladen",
+        "contact": "Kontakt",
+        "downloadNow": "Jetzt Herunterladen"
+    },
+    "footer": {
+        "copyright": "© 2024 Alle Rechte vorbehalten",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen",
+        "contact": "Kontakt"
+    }
+}
