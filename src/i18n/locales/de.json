@@ -58,5 +58,44 @@
         "privacy": "Datenschutz",
         "terms": "Nutzungsbedingungen",
         "contact": "Kontakt"
+    },
+    "pricing": {
+        "title": "Preise",
+        "cta": "Jetzt Starten",
+        "bestValue": "Bestes Angebot",
+        "monthly": {
+            "name": "Monatlich",
+            "period": "pro Monat"
+        },
+        "yearly": {
+            "name": "Jährlich",
+            "period": "pro Jahr"
+        },
+        "features": {
+            "1": "Alle Premium-Funktionen",
+            "2": "Priorisierter Support",
+            "3": "Jederzeit kündbar"
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Kontaktieren Sie uns für Fragen oder Anregungen",
+        "getInTouch": "Kontaktinformationen",
+        "email": "E-Mail",
+        "website": "Webseite",
+        "phone": "Telefon",
+        "followUs": "Folgen Sie uns",
+        "sendMessage": "Nachricht senden",
+        "form": {
+            "name": "Ihr Name",
+            "email": "Ihre E-Mail",
+            "subject": "Betreff",
+            "message": "Ihre Nachricht",
+            "namePlaceholder": "Geben Sie Ihren Namen ein",
+            "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+            "subjectPlaceholder": "Geben Sie den Betreff ein",
+            "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier",
+            "submit": "Nachricht senden"
+        }
     }
 }

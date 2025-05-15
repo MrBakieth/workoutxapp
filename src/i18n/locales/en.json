@@ -58,5 +58,44 @@
         "privacy": "Privacy",
         "terms": "Terms",
         "contact": "Contact"
+    },
+    "pricing": {
+        "title": "Pricing",
+        "cta": "Get Started",
+        "bestValue": "Best Value",
+        "monthly": {
+            "name": "Monthly",
+            "period": "per month"
+        },
+        "yearly": {
+            "name": "Yearly",
+            "period": "per year"
+        },
+        "features": {
+            "1": "All premium features",
+            "2": "Priority support",
+            "3": "Cancel anytime"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with us for any questions or suggestions",
+        "getInTouch": "Get In Touch",
+        "email": "Email",
+        "website": "Website",
+        "phone": "Phone",
+        "followUs": "Follow Us",
+        "sendMessage": "Send Message",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Your Message",
+            "namePlaceholder": "Enter your name",
+            "emailPlaceholder": "Enter your email",
+            "subjectPlaceholder": "Enter message subject",
+            "messagePlaceholder": "Write your message here",
+            "submit": "Send Message"
+        }
     }
 }

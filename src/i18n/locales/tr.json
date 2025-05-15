@@ -58,5 +58,44 @@
         "privacy": "Gizlilik",
         "terms": "Şartlar",
         "contact": "İletişim"
+    },
+    "pricing": {
+        "title": "Fiyatlandırma",
+        "cta": "Hemen Başla",
+        "bestValue": "En İyi Fırsat",
+        "monthly": {
+            "name": "Aylık",
+            "period": "aylık"
+        },
+        "yearly": {
+            "name": "Yıllık",
+            "period": "yıllık"
+        },
+        "features": {
+            "1": "Tüm premium özellikler",
+            "2": "Öncelikli destek",
+            "3": "İstediğin zaman iptal"
+        }
+    },
+    "contact": {
+        "title": "İletişim",
+        "subtitle": "Sorularınız veya önerileriniz için bizimle iletişime geçin",
+        "getInTouch": "İletişim Bilgilerimiz",
+        "email": "E-posta",
+        "website": "Web Sitesi",
+        "phone": "Telefon",
+        "followUs": "Bizi Takip Edin",
+        "sendMessage": "Mesaj Gönder",
+        "form": {
+            "name": "Adınız",
+            "email": "E-posta Adresiniz",
+            "subject": "Konu",
+            "message": "Mesajınız",
+            "namePlaceholder": "Adınızı girin",
+            "emailPlaceholder": "E-posta adresinizi girin",
+            "subjectPlaceholder": "Mesaj konunuzu girin",
+            "messagePlaceholder": "Mesajınızı buraya yazın",
+            "submit": "Gönder"
+        }
     }
 }

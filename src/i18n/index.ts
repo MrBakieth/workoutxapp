@@ -21,19 +21,32 @@ const resources = {
 };
 
 i18n
-  // Otomatik dil tespiti için
-  .use(LanguageDetector)
   // React i18next modülünü bağlıyoruz
   .use(initReactI18next)
+  // Otomatik dil tespiti için (ama varsayılan dili değiştirmek için öncelik ayarını değiştiriyoruz)
+  .use(LanguageDetector)
   // i18n'i başlatma konfigürasyonu
   .init({
     resources,
-    fallbackLng: 'en', // Varsayılan dil
+    lng: 'en', // Varsayılan olarak İngilizce kullan
+    fallbackLng: 'en', // Sorun olduğunda İngilizce'ye dön
     debug: false, // Geliştirme aşamasında debug true yapılabilir
+    
+    detection: {
+      order: ['localStorage', 'sessionStorage', 'navigator'], // Önce localStorage'a bak, sonra tarayıcıya
+      lookupLocalStorage: 'i18nextLng', // localStorage anahtarı
+      caches: ['localStorage'], // Dil tercihini localStorage'da sakla
+    },
     
     interpolation: {
       escapeValue: false // React zaten XSS koruması sağladığı için
     }
   });
+
+// Başlangıçta İngilizce'yi zorunlu kıl (tarayıcı otomatik algılama yerine)
+if (!localStorage.getItem('i18nextLng')) {
+  i18n.changeLanguage('en');
+  localStorage.setItem('i18nextLng', 'en');
+}
 
 export default i18n;
