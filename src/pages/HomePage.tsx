@@ -3,7 +3,8 @@ import { useRef, useState, useEffect } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 // BURADA EKRAN GÖRÜNTÜSÜNÜ İMPORT EDİYORUZ
-import appScreenshot from "../assets/app-screenshot.png";
+import AppScreenshot from "../components/ui/AppScreenshot";
+import ImageOptimizer from "../components/ui/ImageOptimizer";
 import { useTranslation } from "react-i18next";
 import ScrollToTop from "../components/ui/ScrollToTop";
 
@@ -190,74 +191,41 @@ const HomePage = () => {
             </div>
 
             {/* Mobil uygulama ekran görüntüsü */}
-            <motion.div
-              className="mt-16 relative w-full max-w-lg"
-              initial={{ opacity: 0, y: 50 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 1.5 }}
-            >
-              <div className="relative mx-auto w-full h-full max-w-[320px]">
-                {/* Sadece bir tane parıltılı telefon şekilli arka plan */}
+            <AppScreenshot
+              isVisible={isVisible}
+              maxWidth="320px"
+              aspectRatio="9/19.5"
+              className="max-w-lg"
+            />
+
+            {/* Etraftaki yörüngedeki parçacıklar */}
+            <div className="absolute inset-0 -z-10">
+              {[...Array(6)].map((_, i) => (
                 <motion.div
-                  className="absolute -inset-3"
+                  key={i}
+                  className="absolute w-2 h-2 rounded-full bg-primary/60"
+                  initial={{
+                    x: "50%",
+                    y: "50%",
+                    scale: 0.2,
+                    opacity: 0.3,
+                  }}
                   animate={{
-                    boxShadow: [
-                      "0 0 15px rgba(10, 255, 157, 0.08)",
-                      "0 0 25px rgba(10, 255, 157, 0.15)",
-                      "0 0 15px rgba(10, 255, 157, 0.08)",
-                    ],
+                    x: `${50 + 45 * Math.cos((2 * Math.PI * i) / 6)}%`,
+                    y: `${50 + 45 * Math.sin((2 * Math.PI * i) / 6)}%`,
+                    opacity: [0.3, 0.8, 0.3],
+                    scale: [0.2, 0.4, 0.2],
                   }}
                   transition={{
-                    duration: 10,
+                    duration: 8,
+                    delay: i * 0.5,
                     repeat: Infinity,
+                    repeatType: "reverse",
                     ease: "easeInOut",
                   }}
-                  style={{
-                    borderRadius: "72px",
-                    pointerEvents: "none",
-                  }}
                 />
-
-                {/* Ekran görüntüsü - sadece telefon görseli */}
-                <img
-                  src={appScreenshot}
-                  alt="WorkoutX app screenshot"
-                  className="w-full h-auto relative z-10"
-                  style={{
-                    borderRadius: "38px",
-                  }}
-                />
-              </div>
-
-              {/* Etraftaki yörüngedeki parçacıklar */}
-              <div className="absolute inset-0 -z-10">
-                {[...Array(6)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="absolute w-2 h-2 rounded-full bg-primary/60"
-                    initial={{
-                      x: "50%",
-                      y: "50%",
-                      scale: 0.2,
-                      opacity: 0.3,
-                    }}
-                    animate={{
-                      x: `${50 + 45 * Math.cos((2 * Math.PI * i) / 6)}%`,
-                      y: `${50 + 45 * Math.sin((2 * Math.PI * i) / 6)}%`,
-                      opacity: [0.3, 0.8, 0.3],
-                      scale: [0.2, 0.4, 0.2],
-                    }}
-                    transition={{
-                      duration: 8,
-                      delay: i * 0.5,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                      ease: "easeInOut",
-                    }}
-                  />
-                ))}
-              </div>
-            </motion.div>
+              ))}
+            </div>
           </motion.div>
 
           {/* Scroll indicator */}
@@ -670,38 +638,12 @@ const HomePage = () => {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
               >
-                <div className="relative max-w-[250px]">
-                  {/* Telefon görseli etrafındaki parıltı efekti */}
-                  <motion.div
-                    className="absolute -inset-2"
-                    animate={{
-                      boxShadow: [
-                        "0 0 15px rgba(10, 255, 157, 0.08)",
-                        "0 0 25px rgba(10, 255, 157, 0.15)",
-                        "0 0 15px rgba(10, 255, 157, 0.08)",
-                      ],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    style={{
-                      borderRadius: "52px",
-                      pointerEvents: "none",
-                    }}
-                  />
-
-                  {/* Telefon ekran görüntüsü */}
-                  <img
-                    src={appScreenshot}
-                    alt="WorkoutX app screenshot"
-                    className="w-full h-auto relative z-10"
-                    style={{
-                      borderRadius: "38px",
-                    }}
-                  />
-                </div>
+                <AppScreenshot
+                  isVisible={true}
+                  maxWidth="250px"
+                  aspectRatio="9/19.5"
+                  className="mt-0"
+                />
               </motion.div>
 
               {/* Sağ taraf - İçerik */}
@@ -966,10 +908,19 @@ const HomePage = () => {
                 className="bg-dark-gray rounded-2xl p-6 border border-white/5 flex-1"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <img
+                  <ImageOptimizer
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-primary/30"
+                    width={56}
+                    height={56}
+                    rounded={true}
+                    className="border-2 border-primary/30"
+                    priority={index < 2}
+                    motionProps={{
+                      initial: { opacity: 0, scale: 0.8 },
+                      animate: { opacity: 1, scale: 1 },
+                      transition: { duration: 0.3 },
+                    }}
                   />
                   <div>
                     <h3 className="font-bold text-white">{testimonial.name}</h3>

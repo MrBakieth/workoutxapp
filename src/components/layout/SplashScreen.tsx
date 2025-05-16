@@ -1,7 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-// Arka plan görseli için import
-import appBackground from "../../assets/app-background.png"; // Görsel yolunu buraya ekleyin
 import { useTranslation } from "react-i18next";
 
 interface SplashScreenProps {
@@ -136,7 +134,6 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
                 animate={{ opacity: 0.3 }}
                 transition={{ duration: 1.5, ease: "easeInOut" }}
                 style={{
-                  backgroundImage: `url(${appBackground})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
